@@ -1,0 +1,5 @@
+.*
+src/
+tests/
+example/
+jsdoc2md/
