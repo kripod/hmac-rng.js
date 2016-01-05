@@ -6,6 +6,8 @@ node_js:
 - '0.12'
 - '0.11'
 - '0.10'
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
 cache:
   directories:
   - node_modules
@@ -18,3 +20,7 @@ deploy:
     tags: true
     branch: master
     repo: kripod/hmac-rng.js
+addons:
+  code_climate:
+    repo_token:
+      secure: 08N8Dt8GHT2Cvh1dqpj8BO4ILuNCgu5GzcDpLVSvP5iRYIeXwi5ua9Tg/ES9KbBLzMVj4z5b2TlRqv7hrpMT4UunzKt9ACErVekcb6itu73iUSMPUHlJ4tyJT4rkS0GeV8Bk7GGw3RnujEl6OhMk1n10Dr+ybkNxxprv8bljYAsd93TjXHTLFDtTf5Nos6GuOsqt0rTHoPbAKs8o54vopVFj3RyFPl5jlE3PS6bMpmbPjhPBRyTnyvC7v1aSq1aRza1WdtpSCPgCk+f18pH7mdT4MwcqTiPCbvFDxVXctJEXc/P6m/5sq/+7vV8ijrXm4vTwhtYmyG5asSJeYD7h52IMCzqCLt9awNq00sLkpRVvqE9yYBFhe/4GAMaSOtvYGEMxvjv341G/lIXnwn7vYYaqKaqu0pcpxYOu9P68+B0Gr16eIR2iygA1qikNss4eO28oyPyaXc4O/rg0zG11+LjR9z/uF03KYfrk3c4c200pj1lhJtRkuDdO3+PZA8iqg5gKgTsldfToJ9vSOa71qS8h3XSdPtQpXwHPLxoD3m3+mDDSXJwQQ2b+Ip3g2TJ/uNZFy/daGClCn31mhMGq+rO+B+7BKD8kXme82FPqyV4WP/RfuwujZgnHMgNJcGrrBVMS+NR0RY/+3BHxgIFjkEwem11voCqtDQD5yRqTeAQ=
