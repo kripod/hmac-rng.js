@@ -1,3 +1,7 @@
+# Project-specific
+## Generated resources
+coverage/
+
 # Web development
 ## Package managers
 ### NPM

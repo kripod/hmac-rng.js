@@ -2,6 +2,7 @@
 
 [![Version (npm)](https://img.shields.io/npm/v/hmac-rng.svg)](https://npmjs.com/package/hmac-rng)
 [![Build Status](https://img.shields.io/travis/kripod/hmac-rng.js/master.svg)](https://travis-ci.org/kripod/hmac-rng.js)
+[![Code Coverage](https://img.shields.io/codeclimate/coverage/github/kripod/hmac-rng.js.svg)](https://codeclimate.com/github/kripod/hmac-rng.js/coverage)
 [![Code Climate](https://img.shields.io/codeclimate/github/kripod/hmac-rng.js.svg)](https://codeclimate.com/github/kripod/hmac-rng.js)
 
 HMAC-based random number generator written in JavaScript.

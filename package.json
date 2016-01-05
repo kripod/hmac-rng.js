@@ -1,6 +1,6 @@
 {
   "name": "hmac-rng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HMAC-based random number generator.",
   "author": {
     "name": "Kristóf Poduszló"
@@ -12,11 +12,12 @@
   },
   "scripts": {
     "start": "node ./example",
-    "test": "tape ./tests/**/*.js",
+    "test": "rimraf ./coverage && istanbul cover ./tests",
     "docs": "jsdoc2md ./lib/**/*.js -t ./jsdoc2md/README.hbs > ./README.md"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
     "jsdoc-to-markdown": "^1.3.3",
     "rimraf": "^2.5.0",
