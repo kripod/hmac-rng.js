@@ -1,6 +1,6 @@
 {
   "name": "hmac-rng",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HMAC-based random number generator.",
   "author": {
     "name": "Kristóf Poduszló"
