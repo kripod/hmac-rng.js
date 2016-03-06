@@ -16,6 +16,7 @@ HMAC-based random number generator written in JavaScript.
             * [.nextInt(min, max)](#module_HmacRng--HmacRng+nextInt) ⇒ <code>number</code>
             * [.nextInts(min, max, amount)](#module_HmacRng--HmacRng+nextInts) ⇒ <code>Array.&lt;number&gt;</code>
         * _static_
+            * [.defaultAlgorithm](#module_HmacRng--HmacRng.defaultAlgorithm)
             * [.getRandomInt(seed, min, max)](#module_HmacRng--HmacRng.getRandomInt) ⇒ <code>number</code>
             * [.getRandomInts(seed, min, max, amount)](#module_HmacRng--HmacRng.getRandomInts) ⇒ <code>Array.&lt;number&gt;</code>
             * [.shuffleArray(seed, array)](#module_HmacRng--HmacRng.shuffleArray) ⇒ <code>Array.&lt;Object&gt;</code>
@@ -28,10 +29,10 @@ HMAC-based random number generator written in JavaScript.
 Creates a new HMAC-RNG instance.
 
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| seed | <code>string</code> |  | Seed used for randomization. |
-| [algorithm] | <code>string</code> | <code>&quot;sha512&quot;</code> | Cryptographical algorithm to use HMAC with. |
+| Param | Type | Description |
+| --- | --- | --- |
+| seed | <code>string</code> | Seed used for randomization. |
+| [algorithm] | <code>string</code> | Cryptographic algorithm to use HMAC with. |
 
 <a name="module_HmacRng--HmacRng+nextInt"></a>
 #### hmacRng.nextInt(min, max) ⇒ <code>number</code>
@@ -58,6 +59,11 @@ Gets the next random integers in the current sequence.The maximum range of 'min
 | max | <code>number</code> | Inclusive upper bound of the random integers returned. This must be greater than 'min'. |
 | amount | <code>number</code> | Amount of integers to be generated. |
 
+<a name="module_HmacRng--HmacRng.defaultAlgorithm"></a>
+#### HmacRng.defaultAlgorithm
+Determines the default cryptographic algorithm to use HMAC with.Useful for altering the output of static methods.
+
+**Kind**: static property of <code>[HmacRng](#exp_module_HmacRng--HmacRng)</code>  
 <a name="module_HmacRng--HmacRng.getRandomInt"></a>
 #### HmacRng.getRandomInt(seed, min, max) ⇒ <code>number</code>
 Generates a random integer using the default algorithm.The maximum range of 'min' and 'max' is 2^28 (268435456).
